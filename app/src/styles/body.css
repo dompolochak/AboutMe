@@ -1,0 +1,14 @@
+.Tab.Selected{
+    background-color: hotpink;
+}
+.Tab{
+    background-color: gray;
+}
+.TabList{
+    display:flex;
+    width: min-content;
+}
+
+ul{
+    list-style-type: none;
+}

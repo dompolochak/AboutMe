@@ -1,0 +1,12 @@
+
+.Header, .SubHeader{
+    display:flex;
+    justify-content: center;
+}
+
+.Header{
+    color: red;
+}
+.SubHeader{
+    color: pink;
+}
