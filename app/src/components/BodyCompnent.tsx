@@ -1,5 +1,7 @@
 import React, {memo, ReactElement, useState} from "react";
 import { Tabs, TabList, Tab, TabPanel} from "react-tabs";
+import { TabLabel } from "./TabLablel";
+import { TabBody } from "./TabBody";
 import "../styles/body.css"
 
 
@@ -9,24 +11,24 @@ export const BodyComoponent = memo(function BodyComponent(): ReactElement {
 
 
     return (
-        <>
+        <div className="Body">
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)} selectedTabClassName={"Selected"}>
                 <TabList className={"TabList"}>
-                    <Tab className={"Tab"}>
-                        <div>
-                            <span>Tab1</span>
-                        </div>
+                    <Tab className={"Tab Tab1"}>
+                        <TabLabel label="Tab1" className="Tab1"/>
                     </Tab>
-                    <Tab className={"Tab"}>
-                        <div>
-                            <span>Tab2</span>
-                        </div>
+                    <Tab className={"Tab Tab2"}>
+                        <TabLabel label="Tab2" className="Tab2"/>
                     </Tab>
                 </TabList>
-                <TabPanel><p>WOOOOW</p></TabPanel>
-                <TabPanel><p>AMAZING</p></TabPanel>
+                <TabPanel className="Panel First">
+                    <TabBody message="wow" className="Panel1"/>
+                </TabPanel>
+                <TabPanel className="Panel Second">
+                    <TabBody message = "wow" className="Panel2"/>
+                </TabPanel>
             </Tabs>
-        </>
+        </div>
     )
 
 });

@@ -3,17 +3,17 @@ import '../styles/header.css'
 
 export const HeaderComponent = memo(function HeaderComponent(): ReactElement{
     return (
-        <>
+        <div className="Header">
             <div>
-                <h1 className="Header">
+                <h1 className="Title">
                     Welcome!
                 </h1>
             </div>
             <div>
                 <h2 className="SubHeader">
-                    To the personal website of Dominic Polochak. Please take a look around
+                    This is my website
                 </h2>
             </div> 
-        </>
+        </div>
     )
 })

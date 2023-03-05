@@ -1,14 +1,74 @@
 .Tab.Selected{
-    background-color: hotpink;
+    width: 40%;
+    height: 60px;
 }
 .Tab{
-    background-color: gray;
+    width: 15%;
+    height: 40px;
+    align-self: end;
+    background-color: gray;  
+    border-radius: 30% 30% 0 0;
 }
+
+.Tab1 >span, .Tab2 > span {
+    margin-top: 5%;
+}
+
+.Tab > * {
+    height: 100%;
+    border-radius: 30% 30% 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Tab1.Tab.Selected{
+    background-color: hotpink;
+}
+
+.Tab2.Tab.Selected{
+    background-color: aqua;
+}
+
 .TabList{
     display:flex;
-    width: min-content;
+}
+
+.BodyParagraph{
+    margin: 0;
+}
+
+.PageContainer .Body{
+    flex: 1 1 auto;
+}
+.react-tabs{
+    height:100%;
+}
+
+.Panel{
+    width: 100%;
+}
+
+.Panel > * {
+    height: 100%;
+}
+
+.Panel.react-tabs__tab-panel--selected{
+    height:100%;
+}
+
+
+
+.Panel1{
+    background-color: hotpink;
+    color: white;
+}
+
+.Panel2{
+    background-color: aqua;
+    color: white;
 }
 
 ul{
     list-style-type: none;
+    margin: 0;
 }
