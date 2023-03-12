@@ -2,7 +2,7 @@ import React, {memo, ReactElement, useState} from "react";
 import { Tabs, TabList, Tab, TabPanel} from "react-tabs";
 import { TabLabel } from "./TabLablel";
 import { TabBody } from "./TabBody";
-import "../styles/body.css"
+import "../styles/tabs.css"
 
 
 export const BodyComoponent = memo(function BodyComponent(): ReactElement {

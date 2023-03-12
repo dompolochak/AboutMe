@@ -1,5 +1,5 @@
 import React, { ReactElement, memo} from "react";
-import '../styles/body.css'
+import '../styles/tabs.css'
 
 interface IProps{
     message: string;
