@@ -1,0 +1,9 @@
+.PageContainer > .Body{
+    height: 100%;
+}
+
+.Body > .text{
+    padding: 10%;
+    width: 50%;
+    margin-left: auto;
+}

@@ -1,33 +1,30 @@
-import React, {memo, ReactElement, useState} from "react";
-import { Tabs, TabList, Tab, TabPanel} from "react-tabs";
-import { TabLabel } from "./TabLablel";
-import { TabBody } from "./TabBody";
-import "../styles/tabs.css"
+import React, {memo, ReactElement, useState, useMemo} from "react";
 
+import "../styles/body.css"
 
-export const BodyComoponent = memo(function BodyComponent(): ReactElement {
+interface IProps{
+    contentChoice: number;
+}
 
-    const [tabIndex, setTabIndex] = useState(0);
+export const BodyComoponent = memo(function BodyComponent(props: IProps): ReactElement {
+    const {contentChoice} = props;
 
+    const content = useMemo(() => {
+        switch(contentChoice){
+            case 0:
+                return <><p>000000000000</p></>
+            case 1:
+                return <><p>1111111111111</p></>
+            case 2:
+                return <><p>2222222222222</p></>
+        }
+    }, [contentChoice])
 
     return (
         <div className="Body">
-            <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)} selectedTabClassName={"Selected"}>
-                <TabList className={"TabList"}>
-                    <Tab className={"Tab Tab1"}>
-                        <TabLabel label="Tab1" className="Tab1"/>
-                    </Tab>
-                    <Tab className={"Tab Tab2"}>
-                        <TabLabel label="Tab2" className="Tab2"/>
-                    </Tab>
-                </TabList>
-                <TabPanel className="Panel First">
-                    <TabBody message="wow" className="Panel1"/>
-                </TabPanel>
-                <TabPanel className="Panel Second">
-                    <TabBody message = "wow" className="Panel2"/>
-                </TabPanel>
-            </Tabs>
+            <div className="text">
+                {content}
+            </div>
         </div>
     )
 
