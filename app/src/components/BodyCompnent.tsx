@@ -1,6 +1,7 @@
 import React, {memo, ReactElement, useState, useMemo} from "react";
 
 import "../styles/body.css"
+import { AboutMe } from "./AboutMe";
 
 interface IProps{
     contentChoice: number;
@@ -12,7 +13,7 @@ export const BodyComoponent = memo(function BodyComponent(props: IProps): ReactE
     const content = useMemo(() => {
         switch(contentChoice){
             case 0:
-                return <><p>000000000000</p></>
+                return <AboutMe/>
             case 1:
                 return <><p>1111111111111</p></>
             case 2:
@@ -22,9 +23,7 @@ export const BodyComoponent = memo(function BodyComponent(props: IProps): ReactE
 
     return (
         <div className="Body">
-            <div className="text">
-                {content}
-            </div>
+                {content}    
         </div>
     )
 

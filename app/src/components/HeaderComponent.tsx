@@ -1,37 +1,28 @@
 import React, {ReactElement, memo} from "react";
+import HeaderSocials from "./HeaderSocials";
 import '../styles/header.css'
+import CTA from "./CTA";
+import ME from "../assets/IMG_santroini.JPG"
 
-interface IProps{
-    setContent: (a: number) => void;
-}
-
-export const HeaderComponent = memo(function HeaderComponent(props: IProps): ReactElement{
-    const {setContent} = props;
+export const HeaderComponent = memo(function HeaderComponent(): ReactElement{
 
     return (
-        <div className="Header">
-            
-                <h1 className="Title">
-                    Dominic Polochak
-                </h1>
-            
-            <div className="ButtonContainer">
-                <div>
-                    <button onClick={() => setContent(0)}>
-                        About Me
-                    </button>
-                </div> 
-                <div>
-                    <button onClick={() => setContent(1)}>
-                        Resume
-                    </button>
-                </div> 
-                <div>
-                    <button onClick={() => setContent(2)}>
-                        Contact
-                    </button>
+        <header>
+            <div className="container header_container">
+                <div className="header_text">
+                    <h5>Hello I'm</h5>
+                    <h1>Dominic Polochak</h1>
+                    <h5 className="text-light">Fullstack Developer</h5>
+                    <CTA/>                    
                 </div>
-            </div> 
-        </div>
+                
+                <div className="me">
+                    <img src={ME}/>
+                </div>
+            </div>
+
+            <HeaderSocials/>
+        </header>
+
     )
 })

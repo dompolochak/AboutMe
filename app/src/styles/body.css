@@ -1,9 +1,26 @@
-.PageContainer > .Body{
+/*.PageContainer > .Body{
+    height: 100%;
+
+}
+.AboutMeContainer{
     height: 100%;
 }
-
-.Body > .text{
+.Landing > .descriptionContainer{
     padding: 10%;
     width: 50%;
     margin-left: auto;
 }
+
+.text{
+    margin: 0px;
+}
+
+/*.AboutMeContainer > .Landing {
+    background-image: linear-gradient(to right, rgba(245, 246, 252, 0) 50%, rgba(255, 255, 255, 1) 95%),url("../images/IMG_santroini.JPG");
+    background-repeat: no-repeat;
+    background-size: 75%;
+   /* background-position: 0% 80%;   
+    height: 100%;
+    background-attachment: fixed;
+}*/
+

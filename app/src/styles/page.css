@@ -1,5 +1,9 @@
-.PageContainer{
+/*.PageContainer{
     display:flex;
     flex-flow: column;
     height: 100%;
+}*/
+
+.PageContainer{
+    background: var(--color-bg);
 }
