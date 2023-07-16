@@ -33,7 +33,7 @@
 }
 
 .about_card{
-    background: var(--color-bg-variant);
+    background: var(--color-primary);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
@@ -43,23 +43,38 @@
 
 .about_card:hover{
     background: transparent;
-    border-color: var(--color-primary-variant);
+    border-color: var(--color-primary);
     cursor: default;
 }
 
 .about_icon{
-    color: var(--color-primary);
+    color: var(--color-bg);
     font-size: 1.4rem;
     margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.about_card:hover .about_icon{
+    color: var(--color-primary);
 }
 
 .about_card h5 {
     font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.about_card:hover h5{
+    color: var(--color-primary-variant);
 }
 
 .about_card small{
     font-size: 0.7rem;
-    color: var(--color-light);
+    color: var(--color-bg-variant);
+    transition: var(--transition);
+}
+
+.about_card:hover .about_small{
+    color: var(--color-primary)
 }
 
 .about_content p {

@@ -53,6 +53,7 @@ header{
 
 .header_text h5{
     font-size: 1.5rem;
+    color: var(--color-primary-variant);
 }
 
 .scroll_down{

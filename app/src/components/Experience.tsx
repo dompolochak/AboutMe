@@ -14,35 +14,30 @@ export const Experience = () => {
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div> 
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                 </div>
@@ -54,35 +49,30 @@ export const Experience = () => {
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                     <article className="experience_details">
                         <BsCheckCircleFill className="icon"/>
                         <div>
                             <h4>language</h4>
-                            <small className="text-light">experience</small>
                         </div>
                     </article>
                 </div>

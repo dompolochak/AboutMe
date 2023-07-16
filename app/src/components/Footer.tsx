@@ -1,10 +1,11 @@
 import React from 'react'
+import {BsLinkedin, BsGithub} from "react-icons/bs"
+import {BiLogoInstagramAlt} from "react-icons/bi"
 import "../styles/footer.css"
 
 function Footer() {
     return (
         <footer>
-            <a href="#" className='footer_logo'>link</a>
             <ul className='permalinks'>
                 <li>
                     <a href="#">Home</a>
@@ -21,9 +22,9 @@ function Footer() {
             </ul>
 
             <div className="footer_socials">
-                <a href="instagram.com">IG</a>
-                <a href="linkind.com">Linkedin</a>
-                <a href="github.com">github</a>
+                <a href="instagram.com"><BiLogoInstagramAlt/></a>
+                <a href="linkind.com"><BsLinkedin/></a>
+                <a href="github.com"><BsGithub/></a>
             </div>
 
             <div className="footer_copyright">

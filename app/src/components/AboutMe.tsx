@@ -20,17 +20,17 @@ export const AboutMe = memo(function AboutMe(): ReactElement {
                             <article className="about_card">
                                 <FaAward className="about_icon"/>
                                 <h5>Experience</h5>
-                                <small>Work Experience</small>
+                                <small className="about_small">Work Experience</small>
                             </article>
                             <article className="about_card">
                                 <FaAward className="about_icon"/>
                                 <h5>Experience</h5>
-                                <small>Work Experience</small>
+                                <small className="about_small">Work Experience</small>
                             </article>
                             <article className="about_card">
                                 <FaAward className="about_icon"/>
                                 <h5>Experience</h5>
-                                <small>Work Experience</small>
+                                <small className="about_small">Work Experience</small>
                             </article>
                         </div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolor doloremque, eos quaerat voluptatibus inventore beatae sunt placeat sed, ex est rerum culpa eaque iste minima non harum! Dicta, nisi!</p>
