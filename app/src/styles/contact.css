@@ -80,7 +80,7 @@ input, textarea{
     background: transparent;
     border: 2px solid var(--color-primary-variant);
     resize: none;
-    color: var(--color-primary-variant);
+    color: var(--color-primary);
 }
 
 .contact_container .btn{
