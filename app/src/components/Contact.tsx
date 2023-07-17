@@ -1,6 +1,8 @@
 import React, {useRef} from 'react'
 import {MdEmail} from "react-icons/md"
 import emailjs from "emailjs-com";
+import {AiFillPhone} from "react-icons/ai"
+import {BsLinkedin, BsGithub, BsInstagram} from 'react-icons/bs'
 
 import "../styles/contact.css"
 
@@ -24,14 +26,22 @@ function Contact() {
                 <article className="contact_option">
                     <MdEmail className='contact_option_icon'/>
                     <h4>Email</h4>
-                    <h5>myEmail</h5>
-                    <a href="email.com" target="_blank">Send A message</a>
+                    <h5>dompolochak@gmail.com</h5>
+                    <a href="mailto:dompolochak@gmail.com" target="_blank">Send A message</a>
                 </article>
                 <article className="contact_option">
-                    <MdEmail className='contact_option_icon'/>
-                    <h4>Email</h4>
-                    <h5>myEmail</h5>
-                    <a href="email.com">Send A message</a>
+                    <AiFillPhone className='contact_option_icon'/>
+                    <h4>Phone</h4>
+                    <h5>{"(724) 814 - 4811"}</h5>
+                </article>
+                <article className="contact_option">
+                    <h4>Social Media</h4>
+                    <div className="contact_socials">
+                        <a href="https://www.linkedin.com/in/dominic-polochak-6b366816b/" className='contact_option_icon' target='_blank'><BsLinkedin/></a>
+                        <a href="https://github.com/dompolochak" className='contact_option_icon' target='_blank'><BsGithub/></a>
+                        <a href="https://www.instagram.com/dom_polochak/" className='contact_option_icon' target='_blank'><BsInstagram/> </a>
+                    </div>
+
                 </article>
             </div>
             <form ref={form} onSubmit={(sendEmail)}>

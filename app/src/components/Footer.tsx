@@ -22,9 +22,9 @@ function Footer() {
             </ul>
 
             <div className="footer_socials">
-                <a href="instagram.com"><BiLogoInstagramAlt/></a>
-                <a href="linkind.com"><BsLinkedin/></a>
-                <a href="github.com"><BsGithub/></a>
+                <a href="https://www.instagram.com/dom_polochak/" target='_blank'><BiLogoInstagramAlt/></a>
+                <a href="https://www.linkedin.com/in/dominic-polochak-6b366816b/" target='_blank'><BsLinkedin/></a>
+                <a href="https://github.com/dompolochak" target='_blank'><BsGithub/></a>
             </div>
 
             <div className="footer_copyright">

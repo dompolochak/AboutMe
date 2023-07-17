@@ -96,6 +96,21 @@ input, textarea{
     border-color: transparent;
 }
 
+.contact_socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    right: 2rem;
+    top: 2rem;
+}
+
+.contact_socials .contact_option_icon{
+    font-size: 2rem;
+    margin:auto;
+    margin-top:1rem;
+}
+
 @media screen and (max-width: 1024px){
     .container.contact_container{
         grid-template-columns: 1fr;

@@ -36,15 +36,21 @@
     background: var(--color-primary);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem 0.5rem;
     text-align: center;
     transition: var(--transition);
 }
+
+.about_card > * {
+    margin-bottom: 0.5rem;
+}
+
 
 .about_card:hover{
     background: transparent;
     border-color: var(--color-primary);
     cursor: default;
+    cursor: pointer;
 }
 
 .about_icon{
@@ -61,6 +67,7 @@
 .about_card h5 {
     font-size: 0.95rem;
     transition: var(--transition);
+    color: black;
 }
 
 .about_card:hover h5{
@@ -78,8 +85,9 @@
 }
 
 .about_content p {
-    margin: 2rem 0 2.6rem;
+    margin: 2rem 0 2rem;
     color: var(--color-light);
+    line-height: 2rem;
 }
 
 @media screen and (max-width: 1024px){
@@ -94,7 +102,7 @@
     }
 
     .about_content p {
-        margin: 1rem 0 1.5rem
+        margin: 1rem 0 1.5rem;
     }
     
 }
@@ -108,10 +116,6 @@
     .about_cards{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-    }
-
-    .about_content{
-        text-align: center;
     }
     
     .about_content p {
