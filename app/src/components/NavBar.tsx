@@ -6,6 +6,21 @@ import "../styles/navbar.css"
 
 const NavBar = () => {
     const [activeNav, setActiveNav] = useState("#");
+    const changeNavbarColor = () => {
+        if(window.scrollY < 200){
+            setActiveNav("#");
+        }
+        if (window.scrollY >= 300) {
+            setActiveNav("#about");
+        }
+        if (window.scrollY >= 1000) {
+            setActiveNav("#experience");
+        }
+        if (window.scrollY >= 2000) {
+            setActiveNav("#contact");
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
 
   return (
     <nav>
